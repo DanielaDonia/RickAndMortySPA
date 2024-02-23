@@ -1,0 +1,280 @@
+body{
+  
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+
+
+#app {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.search-container {
+  
+  margin-bottom: 20px; 
+}
+
+
+
+.character-card{
+  width: calc(33.33% - 20px); /* Largura de aproximadamente 33.33% do contêiner pai */
+  margin-bottom: 20px; /* Espaçamento entre os cards */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column; /* Empilha elementos verticalmente dentro do card */
+  align-items: center; /* Centraliza conteúdo horizontalmente */
+  text-align: center;
+  color: black;
+  font-family: "Get Schwifty", system-ui;
+  font-weight: bold; /* Negrito */
+  
+  text-shadow: 
+    0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+    0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+    0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+    0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+    0 0 50px rgba(255, 0, 255, 0.5); /* Sombra magenta */
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  transition: transform 0.3s ease;
+} 
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+
+.rotate {
+    transform: rotate(360deg); /* Rotaciona o botão em 360 graus */
+}
+
+span{
+position: absolute; 
+top: 18%; 
+left: 50%; 
+transform: translate(-50%, -50%); 
+font-weight: bold; 
+  color: black;
+    font-family: "Get Schwifty", system-ui;
+    font-size: 150px;
+    
+    font-weight: bold; /* Negrito */
+  
+  text-shadow: 
+    0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+    0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+    0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+    0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+    0 0 50px rgba(255, 0, 255, 0.5); 
+  
+}
+
+p{
+  position: absolute; 
+top: 80%; 
+left: 60%; 
+transform: translate(-50%, -50%); 
+font-weight: bold; 
+  color: black;
+    font-family: "Get Schwifty", system-ui;
+    font-size: 150px;
+    
+    font-weight: bold; /* Negrito */
+  
+  text-shadow: 
+    0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+    0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+    0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+    0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+    0 0 50px rgba(255, 0, 255, 0.5); 
+}
+
+
+#characterImage img{
+  display: inline-block;
+  position:relative;
+  padding: 0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 20px;
+  text-align:center;
+  border: 10px black solid
+
+}
+
+#banner img{
+ height: 40vh;
+  width: 100%;
+
+
+}
+
+#searchButton {
+  padding: 10px 20px; /* Adicione algum preenchimento para tornar o botão mais visível e clicável */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remova a borda do botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Mude o cursor para indicar que o botão é clicável */
+  transition: background-color 0.3s ease; /* Adicione uma transição suave para a mudança de cor de fundo */
+  font-family: "Kode Mono", monospace;
+  font-size: 20px;
+  
+  font-weight: bold; /* Negrito */
+
+text-shadow: 
+  0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+  0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+  0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+  0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+  0 0 50px rgba(255, 0, 255, 0.5); 
+}
+
+#searchButton:hover {
+  background-color: #0056b3; /* Cor de fundo azul mais escura quando o mouse passa por cima */
+}
+
+#searchInput{
+  padding: 10px 20px; /* Adicione algum preenchimento para tornar o botão mais visível e clicável */
+  background-color:white; /* Cor de fundo azul */
+  color: blue;
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Mude o cursor para indicar que o botão é clicável */
+  transition: background-color 0.3s ease; /* Adicione uma transição suave para a mudança de cor de fundo */
+  font-family:  "Kode Mono", monospace;
+  font-size: 20px;
+  
+  font-weight: bold; /* Negrito */
+
+text-shadow: 
+  0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+  0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+  0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+  0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+  0 0 50px rgba(255, 0, 255, 0.5); 
+
+}
+
+#backButton{
+  padding: 10px 20px; /* Adicione algum preenchimento para tornar o botão mais visível e clicável */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remova a borda do botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  cursor: pointer; /* Mude o cursor para indicar que o botão é clicável */
+  transition: background-color 0.50s ease; /* Adicione uma transição suave para a mudança de cor de fundo */
+  font-family:  "Kode Mono", monospace;
+  margin-top: 50px;
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+  font-weight: bold; /* Negrito */
+
+text-shadow: 
+  0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+  0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+  0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+  0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+  0 0 50px rgba(255, 0, 255, 0.5); 
+}
+#nextPage img {
+  display: inline-block;
+  padding: 0;
+  border: none; 
+  height: 100px;
+  width: 100px;
+}
+
+.next-container {
+  position: fixed; /* Posicionando o container */
+  top: 50%; /* Ajustando a posição verticalmente */
+  right: 250px; 
+  transform: translateY(-50%); /* Ajustando a posição verticalmente */
+  margin-bottom: 20px; 
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+h4{
+  position: absolute; 
+  top: 18%; 
+  left: 15%; 
+  font-weight: bold; 
+    color: black;
+      font-family: "Get Schwifty", system-ui;
+      font-size: 50px;
+    text-shadow: 
+      0 0 10px rgba(255, 255, 0, 0.5), /* Sombra amarela */
+      0 0 20px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+      0 0 30px rgba(0, 255, 255, 0.5), /* Sombra azul */
+      0 0 40px rgba(0, 255, 0, 0.5), /* Sombra verde */
+      0 0 50px rgba(255, 0, 255, 0.5); 
+}
+
+#previousPage img{
+  display: inline-block;
+  padding: 0;
+  border: none; 
+  height: 100px;
+  width: 100px; 
+}
+
+.previous-container{
+  position: fixed; /* Posicionando o container */
+  top: 50%; /* Ajustando a posição verticalmente */
+  left: 150px; 
+  transform: translateY(-50%); /* Ajustando a posição verticalmente */
+  margin-bottom: 20px; 
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+#characterImageMoreDetails img{
+  display: inline-block;
+  position:relative;
+  padding: 0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 20px;
+  text-align:center;
+  border: 10px black solid;
+  border-radius: 50%;
+  
+}
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Certifique-se de que o loading esteja acima de todos os outros elementos */
+}
+
+#loading img {
+  height: 500px;
+  width: 400px;
+}
+
+.character-Moredetails{
+  font-family:  "Kode Mono", monospace;
+}
